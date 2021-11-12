@@ -1,0 +1,63 @@
+body{background-image: url(https://i.pinimg.com/originals/83/f6/5e/83f65e8c6efc88fabfcfbb11cf63bd8a.gif);}
+h1{background-color: lavender;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; border-radius: 25px; 
+}
+.codigos{text-align: center;
+    width: 100px;
+    height: 40px;
+}
+.al{
+background-color: rgba(230, 230, 250, 0.486) ;
+width: 500px;
+height: 500px;
+text-align: center;
+align-items: center;
+margin-left: 30%;
+margin-top: 60px;
+border-radius: 5px;
+}
+.tx1{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: rgb(0, 8, 22);
+     text-shadow: 0 0 10px rgb(138, 31, 170);
+     width: 50%;
+     text-align: center;
+     margin-left: 120px;
+}
+.tarea{
+width: 300px; 
+height: 150px;
+background-color: rgba(214, 168, 214, 0.753);
+color: black;
+border-radius: 5px;
+border: 2px solid rgb(209, 155, 209);
+}
+.codigos{
+width: 300px;
+background-color: rgba(214, 168, 214, 0.678);
+color: black;
+border: 2px solid rgb(209, 155, 209);
+}
+button:hover { background-color: rgb(240, 54, 54);
+    color:white;
+}
+.boton{
+    padding-top: 50px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: blueviolet;color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pie{
+    text-align: center;
+    color: white;
+}
+.cuadro{
+    padding-top: 30px;
+}
+.tarea:hover{background-color: rgba(150, 94, 187, 0.897);
+    color:black;
+    border: rgb(41, 26, 126);
+   }
+
+   
