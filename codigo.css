@@ -25,7 +25,7 @@ border-radius: 5px;
 .tarea{
 width: 300px; 
 height: 150px;
-background-color: rgba(214, 168, 214, 0.753);
+background-color: rgba(214, 168, 214, 0.26);
 color: black;
 border-radius: 5px;
 border: 2px solid rgb(209, 155, 209);
@@ -55,9 +55,12 @@ button{
 .cuadro{
     padding-top: 30px;
 }
-.tarea:hover{background-color: rgba(150, 94, 187, 0.897);
-    color:black;
-    border: rgb(41, 26, 126);
+.tarea:hover{background-color: rgba(182, 95, 240, 0.445);
+    color: black;
+   }
+
+.codigos:hover{background-color: rgba(182, 95, 240, 0.445);
+    color: black;
    }
 
    

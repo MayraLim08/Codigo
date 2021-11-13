@@ -9,23 +9,27 @@
         <h1>SECRET CODE</h1>
     </head>
     <body>
-        <div class="al" id="">
-            <div>
-                <p class="tx1"><u>ESCRIBIR MENSAJE</u></p>
-                <textarea class="tarea" id="text" placeholder="Escribir aquí el mensaje"></textarea>
-                <div>
-                    <span>0/100</span>
+        <main>
+            <section>
+                <div class="al" id="">
+                    <div>
+                        <p class="tx1"><u>ESCRIBIR MENSAJE</u></p>
+                        <textarea class="tarea" id="text" placeholder="Escribir aquí el mensaje"></textarea>
+                        <div>
+                            <span>0/100</span>
+                        </div>
+                    </div>
+                    <div class="cuadro">
+                        <p class="tx1"><u>CLAVE SECRETA</u></p>
+                        <input id="codigos" class="codigos" placeholder="Elige tu clave secreta" type="number" min="-100" max="100" step="any">
+                    </div>
+                    <div class="boton">
+                        <button class="btn" id="btn-cifrar" onclick=""> 🔒 Cifrar </button>
+                        <button class="btn" id="btn-descifrar"> 🔓 Descifrar </button>
+                    </div>
                 </div>
-            </div>
-            <div class="cuadro">
-                <p class="tx1"><u>CLAVE SECRETA</u></p>
-                <input id="codigos" class="codigos" placeholder="Elige tu clave secreta" type="number" min="-100" max="100" step="any">
-            </div>
-            <div class="boton">
-                <button class="btn" id="btn-cifrar" onclick=""> 🔒 Cifrar </button>
-                <button class="btn" id="btn-descifrar"> 🔓 Descifrar </button>
-            </div>
-        </div>
+            </section>
+        </main>
         <footer>
             <p class="pie">©️ Secret Code | MMK - Todos los derechos reservados</p>
         </footer>
