@@ -16,7 +16,7 @@
                         <p class="tx1"><u>ESCRIBIR MENSAJE</u></p>
                         <textarea class="tarea" id="text" placeholder="Escribir aquí el mensaje"></textarea>
                         <div>
-                            <span>0/100</span>
+                            <span id="contador">0/100</span>
                         </div>
                     </div>
                     <div class="cuadro">
@@ -27,6 +27,15 @@
                         <button class="btn" id="btn-cifrar" onclick=""> 🔒 Cifrar </button>
                         <button class="btn" id="btn-descifrar"> 🔓 Descifrar </button>
                     </div>
+                </div>
+            </section>
+            <section class="contenedor">
+                <div id="resultado" class="resultado">
+                    <label id="mjsresult" class="mjsresult"></label>
+                    <textarea id="text-result"></textarea>
+                    <button id="copy" type="button">
+                        <i>📑Copiar</i>
+                    </button>
                 </div>
             </section>
         </main>
