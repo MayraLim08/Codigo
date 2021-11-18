@@ -16,7 +16,7 @@
                         <p class="tx1"><u>ESCRIBIR MENSAJE</u></p>
                         <textarea class="tarea" id="text" placeholder="Escribir aquí el mensaje"></textarea>
                         <div>
-                            <span id="contador">0/100</span>
+                            <span id="contador"><b>0/100</b></span>
                         </div>
                     </div>
                     <div class="cuadro">
@@ -29,13 +29,16 @@
                     </div>
                 </div>
             </section>
-            <section class="contenedor">
-                <div id="resultado" class="resultado">
+            <section class="modalctn ctnclose">
+                <div id="resultado" class="modal modalclose">
+                    <p id="close"></p>
                     <label id="mjsresult" class="mjsresult">Su mensaje es</label>
-                    <textarea id="textresult"></textarea>
-                    <button id="copy" type="button" name="copy">
-                        <i>📑Copiar</i>
-                    </button>
+                    <textarea id="textresult" class="tarearesult"></textarea>
+                    <div class=dcopy>
+                        <button id="copy" type="button" name="copy" class=copy>
+                            <i>📑Copiar</i>
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>

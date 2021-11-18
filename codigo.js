@@ -7,7 +7,7 @@ const btnd = document.getElementById("btn-descifrar");
 const result = document.getElementById("mjsresult") ;
 const txr = document.getElementById("textresult") ;
 const btncopy = document.getElementById("copy") ;
-const ctn = document.getElementsByClassName("contenedor") ;
+const ctn = document.getElementsByClassName("modalctn") ;
 
 //para limitar caracteres.
 //el evento "keyup" se activa cuando soltamos una tecla.
@@ -21,10 +21,10 @@ txt.addEventListener("keyup" , ()=>{
 //funcion del btn cifrar
 
 btnc.addEventListener("click" , ()=>{
-    if( txt.value = "" ){
+    if( txt.value == "" ){
         alert("Te falto ingresar tu mensaje secreto") ;
     }else if(cdg.value == ""){
-        alert("Te falto ingresar un codigo") ;
+        alert("Te falto ingresar una clave secreta") ;
     }else{
         result.innerHTML = "Su mensaje cifrado es:" ;
         let textresult = cifrar.encode(parseInt(cdg.value),txt.value);
@@ -51,10 +51,10 @@ const cifrar = {
 //funcion del btn descifrar
 
 btnd.addEventListener("click", ()=>{
-    if( txt.value = "" ){
+    if( txt.value == "" ){
         alert("Te falto ingresar tu mensaje secreto") ;
     }else if(cdg.value == ""){
-        alert("Te falto ingresar un codigo") ;
+        alert("Te falto ingresar una clave secreta") ;
     }else{
         result.innerHTML = "Su mensaje cifrado es:" ;
         let textresult = descifrar.decode(parseInt(cdg.value),txt.value);
