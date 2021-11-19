@@ -8,6 +8,8 @@ const result = document.getElementById("mjsresult") ;
 const txr = document.getElementById("textresult") ;
 const btncopy = document.getElementById("copy") ;
 const ctn = document.getElementsByClassName("modalctn") ;
+const modal= document.getElementsByClassName("modal");
+const close = document.getElementById("close")
 
 //para limitar caracteres.
 //el evento "keyup" se activa cuando soltamos una tecla.
@@ -27,26 +29,11 @@ btnc.addEventListener("click" , ()=>{
         alert("Te falto ingresar una clave secreta") ;
     }else{
         result.innerHTML = "Su mensaje cifrado es:" ;
-        let textresult = cifrar.encode(parseInt(cdg.value),txt.value);
         txr.innerHTML = textresult;
-        openModal()
+        
+
     }
 })
-
-/*
-const cifrar = {
-    encode(codigos,text){
-      if (text == ""){ throw new TypeError;}
-      let letter;
-      let textEncode = "";
-      for(let i = 0; i < text.length; i++){
-        letter = text.charCodeAt(i);
-        msgEncode += String.fromCharCode(getLetter(letter,codigos));
-      }
-      return textEncode;
-    }
-}
-*/
 
 //funcion del btn descifrar
 
@@ -56,25 +43,12 @@ btnd.addEventListener("click", ()=>{
     }else if(cdg.value == ""){
         alert("Te falto ingresar una clave secreta") ;
     }else{
-        result.innerHTML = "Su mensaje cifrado es:" ;
+        result.innerHTML = "Su mensaje descifrado es:" ;
         let textresult = descifrar.decode(parseInt(cdg.value),txt.value);
         txr.innerHTML = textresult;
+        
     }
 })
-/*
-decode(codigos,text){
-    if (text == ""){ throw new TypeError;}
-    codigos *= -1;
-    let letter;
-    let textDecode = "";
-    for(let i = 0; i < text.length; i++){
-      letter = text.charCodeAt(i);
-      textDecode += String.fromCharCode(getLetter(letter,codigos));
-    }
-    return textDecode;
-  }
-};
-*/
 
 //setTimeout() es usada para retrasar la ejecución de la función pasada como argumento por un periodo de tiempo determinado
 //btn copiar
@@ -90,24 +64,12 @@ btncopy.addEventListener("click", ()=>{
 })
 
 //funciones
-/*
-function openModal(){
-    ctn.classList.remove("containerClose");
-    modal.classList.remove("modalClose");
+
+function openR(){
+    ctn.classList.remove("modalctn")
 }
 
-function closeModal(){
-    modal.classList.add("modalClose");
-    clearMsg();
-    setTimeout(()=>{
-        btncopy.innerHTML = "<i class='fas fa-copy'></i> Copiar";
-        ctn.classList.add("containerClose");
-    }, 550);
-}
 
-function clearMsg(){
-    txt.value = "";
-    txt.innerHTML = "";
-    cot.innerHTML = "0/280";
-}
-*/
+// Cerrar y abrir
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="icono.jpg">
+        <link rel="stylesheet" href="codigo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>SECRET CODE</title>
+        <h1>SECRET CODE</h1>
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="al" id="">
+                    <div>
+                        <p class="tx1"><u>ESCRIBIR MENSAJE</u></p>
+                        <textarea class="tarea" id="text" placeholder="Escribir aquí el mensaje"></textarea>
+                        <div>
+                            <span id="contador"><b>0/100</b></span>
+                        </div>
+                    </div>
+                    <div class="cuadro">
+                        <p class="tx1"><u>CLAVE SECRETA</u></p>
+                        <input id="codigos" class="codigos" placeholder="Elige tu clave secreta" type="number" min="-100" max="100" step="any">
+                    </div>
+                    <div class="boton">
+                        <button class="btn" id="btn-cifrar" onclick=""> 🔒 Cifrar </button>
+                        <button class="btn" id="btn-descifrar"> 🔓 Descifrar </button>
+                    </div>
+                </div>
+            </section>
+            <section class="modalctn ctnClose">
+                <div id="resultado" class="modal modalclose">
+                    <p id="close" class="close"><b>X</b></p>
+                    <label id="mjsresult" class="mjsresult">Su mensaje es</label>
+                    <textarea id="textresult" class="tarearesult"></textarea>
+                    <div class=dcopy>
+                        <button id="copy" type="button" name="copy" class=copy>
+                            <i>📑Copiar</i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="pie">©️ Secret Code | MMK - Todos los derechos reservados</p>
+        </footer>
+        <script src="codigo.js"></script>
+    </body>
+</html>

@@ -78,12 +78,19 @@ button{
     align-items: center;
     justify-content: center;
 }
-/*
-.ctnclose{
+
+.ctnClose{
     opacity: 0;
     visibility: hidden;
 }
+
+
+/*
+justify-content define cómo el navegador
+ distribuye el espacio entre y alrededor de
+  los items flex, a lo largo del eje principal de su contenedor
 */
+
 .modal{
     background-color:rgba(137, 43, 226, 0.432) ;
     width: 70%;
@@ -95,7 +102,7 @@ button{
     padding: 0.5rem;
     animation: open 0.5s forwards;
 }
-/*
+
 #close{
     margin: 5px 5px 0px 0px;
     align-self: flex-end;
@@ -103,12 +110,16 @@ button{
     height:  25px;
     background-color: transparent;
     font-size: 1.5rem;
-    color: black;
     line-height: 25px;
     cursor: pointer;
     border-radius: 10px;
 }
-*/
+
+.close{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(186, 83, 218);
+}
+
 
 .tarearesult{
     background-color: rgba(214, 168, 214, 0.26);
@@ -135,3 +146,5 @@ button{
     padding-bottom: 10px;
     
 }
+
+
