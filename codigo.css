@@ -80,9 +80,9 @@ button{
 }
 
 .ctnClose{
-    opacity: 0;
     visibility: hidden;
 }
+
 
 
 /*
@@ -129,8 +129,6 @@ justify-content define cómo el navegador
     width: 60%;
     height: 50%;
     margin-left: 20%;
-    padding-top: 100px ;
-    padding-bottom: 90px;
 }
 
 .copy{

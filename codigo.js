@@ -9,7 +9,6 @@ const txr = document.getElementById("textresult") ;
 const btncopy = document.getElementById("copy") ;
 const ctn = document.getElementsByClassName("modalctn") ;
 const modal= document.getElementsByClassName("modal");
-const close = document.getElementById("close")
 
 //para limitar caracteres.
 //el evento "keyup" se activa cuando soltamos una tecla.
@@ -28,10 +27,9 @@ btnc.addEventListener("click" , ()=>{
     }else if(cdg.value == ""){
         alert("Te falto ingresar una clave secreta") ;
     }else{
+        document.getElementById("Cuadro2").style.visibility = "visible"
         result.innerHTML = "Su mensaje cifrado es:" ;
-        txr.innerHTML = textresult;
-        
-
+        cifrar(this);
     }
 })
 
@@ -43,9 +41,10 @@ btnd.addEventListener("click", ()=>{
     }else if(cdg.value == ""){
         alert("Te falto ingresar una clave secreta") ;
     }else{
+        document.getElementById("Cuadro2").style.visibility = "visible"
         result.innerHTML = "Su mensaje descifrado es:" ;
-        let textresult = descifrar.decode(parseInt(cdg.value),txt.value);
-        txr.innerHTML = textresult;
+        descifrar(this);
+    
         
     }
 })
@@ -64,12 +63,40 @@ btncopy.addEventListener("click", ()=>{
 })
 
 //funciones
-
-function openR(){
-    ctn.classList.remove("modalctn")
+//convierte datos binarios o cualquier tipo de dato a una representación imprimible
+//en Base64
+function cifrar(elemento){
+    let palabra = txt.value ;
+    let palabra_cifrada = btoa(palabra);
+    txr.innerHTML = palabra_cifrada ;
 }
 
+function descifrar(elemento){
+    let palabra = txt.value ;
+    let palabra_descifrada = atob(palabra);
+    txr.innerHTML = palabra_descifrada ;
 
-// Cerrar y abrir
+}
+
+function cleartxt(){
+    txt.value = "";
+    txt.innerHTML = "";
+    cot.innerHTML = "0/100";
+    cdg.value = "";
+}
+
+// Cerrar 
+
+document.getElementById("close").addEventListener("click",()=>{
+    document.getElementById("Cuadro2").style.visibility = "hidden";
+    cleartxt()
+
+})
+
+
+
+
+
+
 
 
