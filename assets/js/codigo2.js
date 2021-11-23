@@ -1,0 +1,1 @@
+const alfabeto = ["A","B","C","D"]
