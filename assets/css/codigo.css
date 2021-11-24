@@ -63,6 +63,10 @@ button{
     color: black;
    }
 
+.contador{
+    color: white ;
+}
+
   
    
 /*Contenedor*/
@@ -92,7 +96,7 @@ justify-content define cómo el navegador
 */
 
 .modal{
-    background-color:rgba(137, 43, 226, 0.432) ;
+    background-color:rgba(230, 230, 250, 0.151) ;
     width: 70%;
     text-align: center;
     display: flex;
@@ -122,13 +126,18 @@ justify-content define cómo el navegador
 
 
 .tarearesult{
-    background-color: rgba(214, 168, 214, 0.26);
+    background-color: rgba(93, 216, 196, 0.644);
     color: black;
     border-radius: 5px;
-    border: 2px solid rgb(209, 155, 209);
+    border: 2px solid rgb(45, 219, 132);
     width: 60%;
     height: 50%;
     margin-left: 20%;
+}
+
+.tarearesult:hover{
+    background-color:rgba(182, 95, 240, 0.445) ;
+    color: black;
 }
 
 .copy{

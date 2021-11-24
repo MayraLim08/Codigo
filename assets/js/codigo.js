@@ -1,4 +1,3 @@
-
 const txt = document.getElementById("text") ;
 const cot = document.getElementById("contador") ;
 const cdg = document.getElementById("codigos") ;
@@ -65,7 +64,7 @@ btncopy.addEventListener("click", ()=>{
 //funciones
 //convierte datos binarios o cualquier tipo de dato a una representación imprimible
 //en Base64
-/*
+
 function cifrar(elemento){
     let palabra = txt.value ;
     let palabra_cifrada = btoa(palabra);
@@ -78,12 +77,13 @@ function descifrar(elemento){
     txr.innerHTML = palabra_descifrada ;
 
 }
-*/
+
 function cleartxt(){
     txt.value = "";
     txt.innerHTML = "";
     cot.innerHTML = "0/100";
     cdg.value = "";
+    btncopy.textContent = "📑Copiar"
 }
 
 // Cerrar 
