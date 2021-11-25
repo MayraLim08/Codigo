@@ -7,33 +7,29 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <title>SECRET CODE</title>
         <h1>SECRET CODE</h1>
-        <h3><a href="Base64.html">Codigo Cesar</a></h3>
+        <h3><a href="Index.html">Codigo Base64</a></h3>
     </head>
     <body>
         <main>
             <section>
-                <div class="al">
+                <div class="al2" >
                     <div>
                         <p class="tx1">ESCRIBIR MENSAJE</p>
-                        <textarea class="tarea" id="text" placeholder="Escribir aquí el mensaje"></textarea>
+                        <textarea class="tarea3" id="txt" placeholder="Escribir aquí el mensaje"></textarea>
                         <div>
-                            <span id="contador" class="contador"><b>0/100</b></span>
+                            <span id="cont" class="contador"><b>0/100</b></span>
                         </div>
                     </div>
-                    <div class="cuadro">
-                        <p class="tx1">CLAVE SECRETA</p>
-                        <input id="codigos" class="codigos" placeholder="Elige tu clave secreta" type="number" min="-100" max="100" step="any">
-                    </div>
                     <div class="boton">
-                        <button class="btn" id="btn-cifrar"> 🔒 Cifrar </button>
-                        <button class="btn" id="btn-descifrar"> 🔓 Descifrar </button>
+                        <button class="btn" id="cifrar"> 🔒 Cifrar </button>
+                        <button class="btn" id="descifrar"> 🔓 Descifrar </button>
                     </div>
                 </div>
             </section>
             <section id="Cuadro2" class="modalctn ctnClose">
                 <div id="resultado" class="modal modalclose">
                     <p id="close" class="close"><b>X</b></p>
-                    <label id="mjsresult" class="mjsresult">Su mensaje es</label>
+                    <label id="result" class="mjsresult">Su mensaje es</label>
                     <textarea id="textresult" class="tarearesult" ></textarea>
                     <div class=dcopy>
                         <button id="copy" type="button" name="copy" class=copy>
@@ -42,13 +38,10 @@
                     </div>
                 </div>
             </section>
-            <div>
-                <p class="letra">Si desea cambiar el codigo a Base64 presione donde dice "Codigo Cesar"</p>
-            </div>
         </main>
         <footer>
             <p class="pie">©️ Secret Code | MMK - Todos los derechos reservados</p>
         </footer>
-        <script src="assets/js/codigo2.js"></script>
+        <script src="assets/js/codigo.js"></script>
     </body>
 </html>

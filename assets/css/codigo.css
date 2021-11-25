@@ -5,6 +5,25 @@ h1{background-color: rgba(230, 230, 250, 0.747);font-family: 'Segoe UI', Tahoma,
     width: 100px;
     height: 40px;
 }
+
+h3{
+    background-color: rgba(230, 230, 250, 0.747);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    margin-left: 40%;
+    
+
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+
 .al{
 background-color: rgba(230, 230, 250, 0.151) ;
 width: 500px;
@@ -154,4 +173,36 @@ justify-content define cómo el navegador
     
 }
 
+/*2pag*/
 
+.al2{
+    background-color: rgba(230, 230, 250, 0.151) ;
+    width: 500px;
+    height: 490px;
+    text-align: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 60px;
+    border-radius: 5px;
+
+}
+
+.tarea3{
+    width: 350px; 
+    height: 250px;
+    background-color: rgba(93, 216, 196, 0.644);
+    color: black;
+    border-radius: 5px;
+    border: 2px solid rgb(45, 219, 132);
+}
+
+.letra{
+    background-color: rgba(216, 191, 216, 0.377);
+    color:black;
+    width: 45%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: 26%;
+    border-radius: 5px;
+
+}

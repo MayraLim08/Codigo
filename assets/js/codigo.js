@@ -1,9 +1,8 @@
-const txt = document.getElementById("text") ;
-const cot = document.getElementById("contador") ;
-const cdg = document.getElementById("codigos") ;
-const btnc = document.getElementById("btn-cifrar") ;
-const btnd = document.getElementById("btn-descifrar");
-const result = document.getElementById("mjsresult") ;
+const txt = document.getElementById("txt") ;
+const cot = document.getElementById("cont") ;
+const btnc = document.getElementById("cifrar") ;
+const btnd = document.getElementById("descifrar");
+const result = document.getElementById("result") ;
 const txr = document.getElementById("textresult") ;
 const btncopy = document.getElementById("copy") ;
 const ctn = document.getElementsByClassName("modalctn") ;
@@ -23,8 +22,6 @@ txt.addEventListener("keyup" , ()=>{
 btnc.addEventListener("click" , ()=>{
     if( txt.value == "" ){
         alert("Te falto ingresar tu mensaje secreto") ;
-    }else if(cdg.value == ""){
-        alert("Te falto ingresar una clave secreta") ;
     }else{
         document.getElementById("Cuadro2").style.visibility = "visible"
         result.innerHTML = "Su mensaje cifrado es:" ;
@@ -37,8 +34,6 @@ btnc.addEventListener("click" , ()=>{
 btnd.addEventListener("click", ()=>{
     if( txt.value == "" ){
         alert("Te falto ingresar tu mensaje secreto") ;
-    }else if(cdg.value == ""){
-        alert("Te falto ingresar una clave secreta") ;
     }else{
         document.getElementById("Cuadro2").style.visibility = "visible"
         result.innerHTML = "Su mensaje descifrado es:" ;
@@ -82,7 +77,6 @@ function cleartxt(){
     txt.value = "";
     txt.innerHTML = "";
     cot.innerHTML = "0/100";
-    cdg.value = "";
     btncopy.textContent = "📑Copiar"
 }
 
@@ -93,6 +87,8 @@ document.getElementById("close").addEventListener("click",()=>{
     cleartxt()
 
 })
+
+
 
 
 
